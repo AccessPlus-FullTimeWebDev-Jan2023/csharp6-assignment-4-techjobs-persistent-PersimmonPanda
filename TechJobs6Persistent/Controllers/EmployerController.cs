@@ -24,8 +24,8 @@ namespace TechJobs6Persistent.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            List<Job> jobs = context.Jobs.ToList();
-            return View(jobs);
+            List<Employer> employers = context.Employers.ToList();
+            return View(employers);
         }
 
         [HttpGet]
